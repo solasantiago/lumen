@@ -169,28 +169,53 @@ function cumulo({ entrada, datos, resumen }, { cx, cy, R, yNombre, enlace }) {
   return g;
 }
 
-export function dibujarCielo(contenedor, items, { enlace }) {
-  let anchoPrevio = 0;
+// ajustar: false → ancho del contenedor y alto según el ancho (la web).
+// ajustar: true  → llena el contenedor (ancho y alto) y escala todo, letras incluidas (modo pizarra).
+export function dibujarCielo(contenedor, items, { enlace, ajustar = false }) {
+  let previo = '';
 
   const dibujar = () => {
-    const W = Math.max(300, Math.round(contenedor.clientWidth));
-    if (Math.abs(W - anchoPrevio) < 2) return;
-    anchoPrevio = W;
-    const n = items.length;
-    const cols = W >= 900 ? Math.min(n, 3) : W >= 600 ? Math.min(n, 2) : 1;
-    const filas = Math.ceil(n / cols);
-    const celdaW = W / cols;
-    const celdaH = Math.min(450, Math.max(360, celdaW * 0.97));
-    const H = Math.round(filas * celdaH);
+    const ancho = Math.round(contenedor.clientWidth);
+    const alto = Math.round(contenedor.clientHeight);
+    if (ajustar ? `${ancho}x${alto}` === previo || !alto : Math.abs(ancho - Number(previo)) < 2) return;
+    previo = ajustar ? `${ancho}x${alto}` : String(ancho);
+    const n = Math.max(items.length, 1);
+    let W;
+    let H;
+    let cols;
+    let celdaW;
+    let celdaH;
+    if (ajustar) {
+      // Lienzo virtual de 960 de ancho: en una tele de 1920 todo se ve al doble de tamaño.
+      W = 960;
+      H = Math.max(360, Math.round((W * alto) / Math.max(ancho, 1)));
+      cols = 1;
+      for (let c = 1; c <= n; c++) {
+        const lado = (k) => Math.min(W / k, H / Math.ceil(n / k));
+        if (lado(c) > lado(cols)) cols = c;
+      }
+      celdaW = W / cols;
+      celdaH = H / Math.ceil(n / cols);
+    } else {
+      W = Math.max(300, ancho);
+      cols = W >= 900 ? Math.min(n, 3) : W >= 600 ? Math.min(n, 2) : 1;
+      celdaW = W / cols;
+      celdaH = Math.min(450, Math.max(360, celdaW * 0.97));
+      H = Math.round(Math.ceil(n / cols) * celdaH);
+    }
 
     const svg = s('svg', {
-      viewBox: `0 0 ${W} ${H}`, width: W, height: H, role: 'group',
+      viewBox: `0 0 ${W} ${H}`,
+      width: ajustar ? '100%' : W,
+      height: ajustar ? '100%' : H,
+      preserveAspectRatio: 'xMidYMid meet',
+      role: 'group',
       'aria-label': 'Mapa de constelaciones: cada estrella es un tema y brilla según su nivel',
     }, defs(), fondoEstrellado(W, H));
 
     items.forEach((item, i) => {
       const fila = Math.floor(i / cols);
-      const enFila = Math.min(cols, n - fila * cols);
+      const enFila = Math.min(cols, items.length - fila * cols);
       const offset = ((cols - enFila) * celdaW) / 2;
       const cx = offset + (i % cols) * celdaW + celdaW / 2;
       const cy = fila * celdaH + celdaH * 0.45;

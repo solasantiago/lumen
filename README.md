@@ -13,6 +13,18 @@ Agente personal para organizar el estudio de **Ingeniería en Sistemas de Inform
 
 El contrato de métricas para los agentes de materia está en [`docs/contrato.md`](docs/contrato.md).
 
+## Modo pizarra (tele o iPad)
+
+https://solasantiago.github.io/lumen/#/pizarra muestra Lumen en pantalla completa, como carrusel: cielo del cuatrimestre, cuenta regresiva al próximo examen, qué estudiar hoy, una diapositiva por materia y una pregunta al pasar para repasar. Se recarga sola cada 5 minutos, mantiene la pantalla encendida, corre el contenido unos píxeles para no marcar la pantalla y se atenúa de 0 a 7 h.
+
+| Parámetro | Ejemplo | Qué hace |
+|---|---|---|
+| `d` | `#/pizarra?d=cuenta,hoy,pregunta` | Elige las diapositivas (`cielo`, `cuenta`, `hoy`, `materias` o el id de una materia, `pregunta`). Con una sola queda fija. |
+| `s` | `#/pizarra?s=30` | Segundos por diapositiva (20 por defecto). |
+| `noche` | `#/pizarra?noche=0` | No atenuar de noche. |
+
+Controles: flechas o deslizar para cambiar, espacio o tocar para pausar/ver controles, `F` pantalla completa, `Esc` salir.
+
 ## Uso local
 
 Requiere Node 20 o más (sin dependencias).

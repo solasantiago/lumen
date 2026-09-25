@@ -64,7 +64,7 @@ Si falta alguna carpeta, creala cuando la necesites. No inventes contenido de la
 
 - Los `id` de unidades y temas son estables. Si un tema se divide, el original conserva su id.
 - No borres temas con progreso. Si un tema no está en el programa pero la cátedra lo da, agregalo con un id nuevo.
-- `evaluaciones` va en orden cronológico. Pedí las fechas de parciales apenas se conozcan; cuando llegue la nota, completá `nota` y `estado`.
+- `evaluaciones` va en orden cronológico. Pedí las fechas de parciales apenas se conozcan (y la `hora`, HH:MM, si se sabe); cuando llegue la nota, completá `nota` y `estado`.
 - Si la cátedra informa el régimen de aprobación, completá `aprobacion`.
 - Lo que quieras guardar para vos (por ejemplo, errores frecuentes) va en `extra`.
 - Contrato completo: https://github.com/solasantiago/lumen/blob/main/docs/contrato.md

@@ -55,7 +55,7 @@ La estructura inicial de cada materia ya está armada a partir del programa anal
     }
   ],
   "evaluaciones": [
-    { "id": "p1", "nombre": "1er parcial", "tipo": "parcial", "fecha": "2026-10-14",
+    { "id": "p1", "nombre": "1er parcial", "tipo": "parcial", "fecha": "2026-10-14", "hora": "19:00",
       "unidades": ["u1", "u2", "u3", "u4"], "nota": null, "estado": "pendiente" }
   ],
   "aprobacion": {
@@ -117,7 +117,7 @@ Lumen marca como **vencido** todo tema con `proximo_repaso` anterior o igual a h
 - Los `id` de unidades y temas son **estables**: no los cambies aunque cambie el nombre. Si un tema se divide, el original conserva su id y los nuevos llevan ids nuevos.
 - No borres un tema con progreso; si sale del programa, dejalo con una nota o movelo a otra unidad.
 - `evaluaciones` va en orden cronológico y cada una lista las unidades que evalúa. Cuando llega la nota, completá `nota` y `estado`.
-- Cargá las fechas de parciales apenas se conozcan: sin fecha, la prioridad no puede medir urgencia.
+- Cargá las fechas de parciales apenas se conozcan: sin fecha, la prioridad no puede medir urgencia. La `hora` (HH:MM, 24 h) es opcional y hace que la cuenta regresiva del modo pizarra sea exacta.
 - Todo lo que el agente quiera guardar para sí mismo va en `extra`.
 
 ## Validar antes de hacer push

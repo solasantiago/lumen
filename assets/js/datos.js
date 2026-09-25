@@ -11,20 +11,25 @@ export async function cargar({ demo = false } = {}) {
   const indice = await getJSON('data/lumen.json');
   const materias = new Map();
   const historiales = new Map();
+  let agenda = null;
 
-  await Promise.all(indice.cuatrimestres.flatMap((c) => [
-    getJSON(`data/${c.id}/historial.json`).then((h) => historiales.set(c.id, h), () => {}),
-    ...c.materias.map(async (entrada) => {
-      const clave = `${c.id}/${entrada.id}`;
-      try {
-        materias.set(clave, { entrada, cuatrimestre: c, datos: await getJSON(`data/${entrada.archivo}`) });
-      } catch (error) {
-        materias.set(clave, { entrada, cuatrimestre: c, datos: null, error });
-      }
-    }),
-  ]));
+  await Promise.all([
+    // Opcional: disponibilidad y horarios de cursada (skill planificar-semana), si el índice la declara.
+    indice.agenda && getJSON(`data/${indice.agenda}`).then((a) => { agenda = a; }, () => {}),
+    ...indice.cuatrimestres.flatMap((c) => [
+      getJSON(`data/${c.id}/historial.json`).then((h) => historiales.set(c.id, h), () => {}),
+      ...c.materias.map(async (entrada) => {
+        const clave = `${c.id}/${entrada.id}`;
+        try {
+          materias.set(clave, { entrada, cuatrimestre: c, datos: await getJSON(`data/${entrada.archivo}`) });
+        } catch (error) {
+          materias.set(clave, { entrada, cuatrimestre: c, datos: null, error });
+        }
+      }),
+    ]),
+  ]);
 
-  const estado = { indice, materias, historiales, demo };
+  const estado = { indice, materias, historiales, agenda, demo };
   if (demo) aplicarDemo(estado);
   return estado;
 }
@@ -71,7 +76,10 @@ function aplicarDemo({ indice, materias, historiales }) {
       }
     });
     const [p1, p2] = datos.evaluaciones;
-    if (p1) p1.fecha = sumarDias(hoy, 6 + Math.floor(r() * 14));
+    if (p1) {
+      p1.fecha = sumarDias(hoy, 1 + Math.floor(r() * 14));
+      p1.hora = '19:00';
+    }
     if (p2) p2.fecha = sumarDias(hoy, 50 + Math.floor(r() * 20));
     datos.sesiones = Array.from({ length: 6 + Math.floor(r() * 8) }, (_, i) => ({
       fecha: sumarDias(hoy, -i * 2), minutos: 45 + Math.round(r() * 90), tipo: 'practica',

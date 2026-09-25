@@ -50,3 +50,4 @@ Cada flujo tiene su skill en `.claude/skills/`:
 - Las fórmulas de progreso y prioridad están en `assets/js/progreso.js` y las usan la web y los scripts. Si cambian, actualizá `docs/contrato.md`.
 - La web es HTML/CSS/JS sin build ni dependencias. Todo texto que venga de los datos se inserta con `textContent` (helper `h()` de `assets/js/ui.js`).
 - El modo demo (`?demo` en la URL) inventa niveles y fechas solo en el navegador; nunca escribe datos.
+- Modo pizarra (`#/pizarra`, en `assets/js/vistas/pizarra.js`): carrusel de pantalla completa para la tele o el iPad. Parámetros: `d` (diapositivas: `cielo`, `cuenta`, `hoy`, `materias` o un id de materia, `pregunta`), `s` (segundos por diapositiva) y `noche=0` (no atenuar de 0 a 7 h). Se recarga sola cada 5 minutos y festeja los temas que suben de nivel.

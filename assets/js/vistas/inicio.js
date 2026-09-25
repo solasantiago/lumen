@@ -19,7 +19,8 @@ function cifra({ etiqueta, valor, detalle, principal = false, extra }) {
 function cuandoEs(ev, hoy) {
   if (!ev?.fecha) return 'fecha a definir';
   const d = diasEntre(hoy, ev.fecha);
-  return d === 0 ? 'hoy' : `en ${plural(d, 'día', 'días')}`;
+  if (d === 0) return ev.hora ? `hoy a las ${ev.hora}` : 'hoy';
+  return `en ${plural(d, 'día', 'días')}`;
 }
 
 function tarjetaMateria(item, hoy, enlace) {
@@ -49,7 +50,7 @@ function tarjetaMateria(item, hoy, enlace) {
         h('span', { class: 'valor', text: pct(e.porcentaje) }),
         h('small', { text: e.estado && e.estado !== 'pendiente'
           ? `${e.estado}${e.nota != null ? ` · nota ${e.nota}` : ''}`
-          : e.fecha ? `${fechaLarga(e.fecha)} · ${cuandoEs(e, hoy)}` : 'fecha a definir' })))),
+          : e.fecha ? `${fechaLarga(e.fecha)}${e.hora ? ` ${e.hora}` : ''} · ${cuandoEs(e, hoy)}` : 'fecha a definir' })))),
     distribucion(resumen.distribucion, { etiqueta: `${datos.nombre}, temas por nivel` }),
     h('div', { class: 'materia-pie' },
       h('span', { class: 'chip', text: plural(datos.unidades.length, 'unidad', 'unidades') }),

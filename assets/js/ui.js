@@ -79,6 +79,13 @@ const TRAZOS = {
   bandera: [['path', { d: 'M5 21V4M5 4h11l-2 4 2 4H5' }]],
   github: [['path', { d: 'M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21' }]],
   terminal: [['path', { d: 'm4.5 7 5 5-5 5M12 17.5h7.5' }]],
+  pantalla: [['rect', { x: '2.5', y: '4', width: '19', height: '13', rx: '2' }], ['path', { d: 'M8 21h8M12 17v4' }]],
+  pausa: [['path', { d: 'M8.5 5v14M15.5 5v14' }]],
+  play: [['path', { d: 'M7 4.8v14.4L19 12 7 4.8Z' }]],
+  anterior: [['path', { d: 'm15 6-6 6 6 6' }]],
+  siguiente: [['path', { d: 'm9 6 6 6-6 6' }]],
+  expandir: [['path', { d: 'M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5' }]],
+  cerrar: [['path', { d: 'M6 6l12 12M18 6 6 18' }]],
 };
 
 export function icono(nombre, { tam = 20, clase } = {}) {

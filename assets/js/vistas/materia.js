@@ -13,7 +13,7 @@ function cuandoEs(ev, hoy) {
   if (!ev?.fecha) return 'Fecha a definir';
   const d = diasEntre(hoy, ev.fecha);
   const falta = d === 0 ? 'hoy' : d > 0 ? `en ${plural(d, 'día', 'días')}` : `hace ${plural(-d, 'día', 'días')}`;
-  return `${fechaLarga(ev.fecha)} · ${falta}`;
+  return `${fechaLarga(ev.fecha)}${ev.hora ? ` · ${ev.hora} h` : ''} · ${falta}`;
 }
 
 function cifra({ etiqueta, valor, detalle, principal = false, extra }) {

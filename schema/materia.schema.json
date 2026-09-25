@@ -120,6 +120,10 @@
         "nombre": { "type": "string", "minLength": 1 },
         "tipo": { "enum": ["parcial", "recuperatorio", "final", "tp", "integrador", "otro"] },
         "fecha": { "oneOf": [{ "$ref": "#/$defs/fecha" }, { "type": "null" }] },
+        "hora": {
+          "oneOf": [{ "type": "string", "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$" }, { "type": "null" }],
+          "description": "Opcional, HH:MM en 24 h. La usa la cuenta regresiva del modo pizarra."
+        },
         "unidades": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slug" } },
         "nota": { "oneOf": [{ "type": "number", "minimum": 0, "maximum": 10 }, { "type": "null" }] },
         "estado": { "enum": ["pendiente", "aprobado", "desaprobado", "ausente"] }

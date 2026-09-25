@@ -2,15 +2,18 @@
 //   #/                       cuatrimestre actual
 //   #/c/<cuatrimestre>       otro cuatrimestre
 //   #/c/<cuatrimestre>/<materia>?f=<evaluación>&v=tabla&u=<unidad>&t=<tema>
+//   #/pizarra?d=<diapositivas>&s=<segundos>   modo pizarra (ver vistas/pizarra.js)
 import { cargar } from './datos.js';
 import { h, icono, ocultarTooltip } from './ui.js';
 import { vistaInicio } from './vistas/inicio.js';
 import { vistaMateria } from './vistas/materia.js';
+import { vistaPizarra } from './vistas/pizarra.js';
 
 const demo = new URLSearchParams(location.search).has('demo');
 const main = document.getElementById('contenido');
 let estado;
 let rutaPrevia = '';
+let vistaActual = null;
 
 function leerRuta() {
   const [camino, consulta = ''] = location.hash.replace(/^#/, '').split('?');
@@ -23,6 +26,7 @@ function leerRuta() {
     vista: q.get('v'),
     unidad: q.get('u'),
     tema: q.get('t'),
+    consulta: q,
     camino,
   };
 }
@@ -81,6 +85,7 @@ function barra(cuatrimestreId) {
       h('a', { class: 'marca', href: '#/', 'aria-label': 'Lumen, inicio' }, icono('lumen', { tam: 22 }), 'Lumen'),
       h('div', { class: 'barra-acciones' },
         selector,
+        h('a', { class: 'boton-icono', href: '#/pizarra', 'aria-label': 'Modo pizarra', title: 'Modo pizarra (para la tele o el iPad)' }, icono('pantalla', { tam: 18 })),
         botonTema,
         indice.repositorio && h('a', { class: 'boton-icono', href: indice.repositorio, rel: 'noopener', 'aria-label': 'Repositorio en GitHub', title: 'Repositorio en GitHub' }, icono('github', { tam: 18 })))));
 }
@@ -104,11 +109,19 @@ function pie() {
       h('span', null,
         'Datos con contrato ', h('code', { class: 'mono', text: 'lumen/materia@1' }),
         ultima ? ` · actualizado ${new Date(ultima).toLocaleDateString('es-AR', { day: 'numeric', month: 'long', year: 'numeric' })}` : ''),
-      indice.repositorio && h('a', { href: `${indice.repositorio}/blob/main/docs/contrato.md`, text: 'Cómo se cargan las métricas' })));
+      h('span', null,
+        h('a', { href: '#/pizarra', text: 'Modo pizarra' }),
+        indice.repositorio && [' · ', h('a', { href: `${indice.repositorio}/blob/main/docs/contrato.md`, text: 'Cómo se cargan las métricas' })])));
+}
+
+async function recargar() {
+  estado = await cargar({ demo });
+  return estado;
 }
 
 function render() {
   ocultarTooltip();
+  vistaActual?.desmontar?.();
   const ruta = leerRuta();
   const { indice, materias } = estado;
   const cuatrimestre = indice.cuatrimestres.find((c) => c.id === ruta.cuatrimestre)
@@ -120,7 +133,11 @@ function render() {
 
   let vista;
   const item = ruta.materia && materias.get(`${cuatrimestre.id}/${ruta.materia}`);
-  if (item) {
+  const pizarra = ruta.camino === 'pizarra' || ruta.camino === '/pizarra';
+  document.body.classList.toggle('modo-pizarra', pizarra);
+  if (pizarra) {
+    vista = vistaPizarra(estado, { consulta: ruta.consulta, recargar, salir: () => { location.hash = '#/'; } });
+  } else if (item) {
     vista = vistaMateria(estado, item, {
       enlace, enlaceCuatri,
       filtro: ruta.filtro, vista: ruta.vista, unidad: ruta.unidad, tema: ruta.tema,
@@ -137,6 +154,7 @@ function render() {
   }
 
   main.replaceChildren(vista.nodo);
+  vistaActual = vista;
   document.title = vista.titulo;
   const cambioDePagina = ruta.camino !== rutaPrevia;
   rutaPrevia = ruta.camino;

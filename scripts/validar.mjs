@@ -23,6 +23,7 @@ const CLAVES_MATERIA = ['esquema', 'id', 'nombre', 'abreviatura', 'actualizado',
 const RE_ID = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const RE_FECHA = /^\d{4}-\d{2}-\d{2}$/;
 const RE_REPO = /^[\w.-]+\/[\w.-]+$/;
+const RE_HORA = /^([01]\d|2[0-3]):[0-5]\d$/;
 
 const esObjeto = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);
 const esTexto = (v) => typeof v === 'string' && v.trim() !== '';
@@ -78,6 +79,8 @@ export function validarMateria(m) {
       if (!esTexto(e.nombre)) err(`${r}.nombre`, 'falta el nombre');
       if (!TIPOS_EVALUACION.includes(e.tipo)) err(`${r}.tipo`, `tiene que ser uno de: ${TIPOS_EVALUACION.join(', ')}`);
       if (e.fecha !== null && e.fecha !== undefined && !esFecha(e.fecha)) err(`${r}.fecha`, 'tiene que ser AAAA-MM-DD o null');
+      if (e.hora !== null && e.hora !== undefined && !(typeof e.hora === 'string' && RE_HORA.test(e.hora)))
+        err(`${r}.hora`, 'tiene que ser HH:MM (24 h) o null');
       if (e.nota !== null && e.nota !== undefined && !(typeof e.nota === 'number' && e.nota >= 0 && e.nota <= 10))
         err(`${r}.nota`, 'tiene que ser un número de 0 a 10 o null');
       if (e.estado !== undefined && !ESTADOS_EVALUACION.includes(e.estado))
@@ -196,6 +199,8 @@ export function validarIndice(ix) {
       }
     });
   });
+  if (ix.agenda != null && !(esTexto(ix.agenda) && ix.agenda.endsWith('.json')))
+    err('agenda', 'tiene que ser una ruta .json relativa a data/ (p. ej. "agenda.json") o null');
   if (ix.cuatrimestre_actual && !ids.has(ix.cuatrimestre_actual))
     err('cuatrimestre_actual', `"${ix.cuatrimestre_actual}" no está en la lista de cuatrimestres`);
   return { errores, avisos };

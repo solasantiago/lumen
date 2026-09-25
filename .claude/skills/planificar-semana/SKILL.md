@@ -21,7 +21,7 @@ description: Arma el plan de estudio de la semana (bloques por día y materia) a
    }
    ```
 
-   Días en minúscula y sin tilde (`lunes` … `domingo`). Si Santiago avisa un cambio puntual para esta semana, usalo sin tocar el archivo.
+   Días en minúscula y sin tilde (`lunes` … `domingo`). La primera vez, agregá `"agenda": "agenda.json"` en `data/lumen.json` para que la web (modo pizarra) la muestre. Si Santiago avisa un cambio puntual para esta semana, usalo sin tocar el archivo.
 
 2. **Prioridades.** Corré `npm run prioridades -- --json --limite 40`. Cada ítem trae materia, unidad, tema, nivel, evaluación, días que faltan y motivo.
 
