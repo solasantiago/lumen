@@ -3,7 +3,7 @@
   "id": "analisis-matematico-2",
   "nombre": "Análisis Matemático II",
   "abreviatura": "AM2",
-  "actualizado": "2026-09-24T22:55:00-03:00",
+  "actualizado": "2026-09-25T04:30:00-03:00",
   "programa": {
     "plan": "2023",
     "anio_programa": 2026,
@@ -149,7 +149,20 @@
         {
           "id": "u3-diferenciabilidad-funciones-rn-rm",
           "nombre": "Diferenciabilidad de funciones de Rⁿ en Rᵐ",
-          "nivel": 1
+          "nivel": 1,
+          "evidencia": {
+            "ultimo_repaso": "2026-09-25",
+            "proximo_repaso": "2026-09-25",
+            "minutos": 15,
+            "autoevaluaciones": [
+              {
+                "fecha": "2026-09-25",
+                "puntaje": 0.25,
+                "tipo": "preguntas de repaso"
+              }
+            ]
+          },
+          "notas": "Repaso 25/09: dice \"falso\" a \"parciales ⇒ diferenciable\" pero da un contraejemplo que no cumple la hipótesis; cree que la fórmula ∇h·v pide ∇h≠0 en vez de h diferenciable."
         },
         {
           "id": "u3-gradiente-matriz-jacobiana",
@@ -174,7 +187,25 @@
         {
           "id": "u3-derivada-direccional-maxima-propiedades",
           "nombre": "Derivada direccional máxima y propiedades del gradiente",
-          "nivel": 1
+          "nivel": 1,
+          "evidencia": {
+            "ultimo_repaso": "2026-09-25",
+            "proximo_repaso": "2026-09-25",
+            "minutos": 25,
+            "autoevaluaciones": [
+              {
+                "fecha": "2026-09-25",
+                "puntaje": 0.25,
+                "tipo": "preguntas de repaso"
+              }
+            ],
+            "ejercicios": {
+              "hechos": 1,
+              "total": 1,
+              "correctos": 0
+            }
+          },
+          "notas": "Repaso 25/09: sabe ∂h/∂v = ∇h·v; en el T1 del cociente pone g_x² en vez de g² en el denominador."
         }
       ]
     },
@@ -222,20 +253,64 @@
           "nombre": "Diferenciales sucesivos y fórmula de Taylor",
           "nivel": 1,
           "evidencia": {
-            "ultimo_repaso": "2026-09-23",
-            "proximo_repaso": "2026-09-25"
+            "ultimo_repaso": "2026-09-25",
+            "proximo_repaso": "2026-09-25",
+            "minutos": 190,
+            "autoevaluaciones": [
+              {
+                "fecha": "2026-09-25",
+                "puntaje": 0.57,
+                "tipo": "preguntas de repaso"
+              }
+            ],
+            "ejercicios": {
+              "hechos": 1,
+              "total": 1,
+              "correctos": 0
+            }
           },
-          "notas": "TP6 ej. 1–6 vistos en modo guiado (23/09); todavía sin ejercicios resueltos solo."
+          "notas": "TP6 ej. 1–6 vistos en modo guiado (23/09); todavía sin ejercicios resueltos solo. Repaso 24–25/09: confunde el coeficiente de (x−a) con el de x en el original; invierte signos de los paréntesis y corta antes del grado del polinomio."
         },
         {
           "id": "u5-extremos-relativos-puntos-estacionarios",
           "nombre": "Extremos relativos y puntos estacionarios",
-          "nivel": 1
+          "nivel": 1,
+          "evidencia": {
+            "ultimo_repaso": "2026-09-25",
+            "proximo_repaso": "2026-09-25",
+            "minutos": 60,
+            "autoevaluaciones": [
+              {
+                "fecha": "2026-09-25",
+                "puntaje": 0.17,
+                "tipo": "preguntas de repaso"
+              }
+            ],
+            "ejercicios": {
+              "hechos": 1,
+              "total": 1,
+              "correctos": 0
+            }
+          },
+          "notas": "Repaso 24–25/09: toma la unión en vez del sistema ∇f=0; busca críticos con derivadas segundas; cuenta como candidatos puntos fuera del dominio; olvida calcular los valores de f."
         },
         {
           "id": "u5-condicion-suficiente-matriz-hessiana",
           "nombre": "Condición suficiente: matriz hessiana",
-          "nivel": 1
+          "nivel": 1,
+          "evidencia": {
+            "ultimo_repaso": "2026-09-25",
+            "proximo_repaso": "2026-09-25",
+            "minutos": 40,
+            "autoevaluaciones": [
+              {
+                "fecha": "2026-09-25",
+                "puntaje": 0.75,
+                "tipo": "preguntas de repaso"
+              }
+            ]
+          },
+          "notas": "Repaso 24–25/09: clasifica bien con det H y f_xx, pero olvida que el criterio requiere ∇f(x₀)=0 (T2 V/F)."
         },
         {
           "id": "u5-extremos-absolutos",
@@ -494,8 +569,22 @@
     },
     "notas": "Fuente: Estructura evaluaciones.pdf (ciclo lectivo 2021; la metodología de calificación se mantiene). Calificación de cada parcial según ítems bien (base = 1 teórico + 2 prácticos): base → 6D, complementa práctica (de 2 prácticos, al menos 1 bien; si aprueba pasa a 8D); base + 1 → 8D; base + 2 → 9D; base + 3 → 10D; solo 3 prácticos → 6D, complementa teoría (de 2 teóricos, al menos 1 bien; si aprueba pasa a 8D); solo 4 prácticos → 7D, complementa teoría; solo 2 prácticos → 6, complementa teoría y práctica (de 2 teóricos y 2 prácticos, al menos 1 bien de cada tipo; si aprueba pasa a 8D); cualquier otro caso → 1 a 5 (insuficiente). Recuperación para aprobación directa: solo uno de los dos parciales, en una única oportunidad; con al menos 2 prácticos bien se rinde la evaluación complementaria, en cualquier otro caso (incluso ausente) el parcial completo, que requiere 8D. Si no aprueba o no se presenta al complemento, se firman los TP y pasa a final; en el recuperatorio completo sin 8D, para la firma solo cuentan los prácticos. Para la firma, cada parcial tiene dos oportunidades de recuperación; quien deba recuperar ambos rinde una evaluación integradora de 6 prácticos (3 de P1 y 3 de P2) y aprueba con 3 bien, al menos 1 de cada parcial. Los ítems teóricos salen del listado de requerimientos teóricos para el examen final de la guía de TP; si es una definición o un enunciado, se complementa con una pregunta o ejercicio de interpretación. Final (aprobación no directa): modalidad virtual, 2 horas, 10 preguntas, mínimo 6 correctas (6 puntos). Temas: P1 hasta extremos inclusive (TP0 a TP6); P2 el resto del programa (TP7 a TP11)."
   },
-  "sesiones": [],
+  "sesiones": [
+    {
+      "fecha": "2026-09-24",
+      "minutos": 330,
+      "tipo": "repaso",
+      "temas": [
+        "u5-diferenciales-sucesivos-formula-taylor",
+        "u5-extremos-relativos-puntos-estacionarios",
+        "u5-condicion-suficiente-matriz-hessiana",
+        "u3-diferenciabilidad-funciones-rn-rm",
+        "u3-derivada-direccional-maxima-propiedades"
+      ]
+    }
+  ],
   "extra": {
-    "nivel_inicial": "2026-09-24: todos los temas de u1–u5 en nivel 1 porque el estudiante asistió a todas las clases de TP0–TP6 (conocimiento superficial, sin ejercicios resueltos solo). Las fechas de las clases no están registradas; solo Taylor tiene ultimo_repaso (sesión guiada del 23/09)."
+    "nivel_inicial": "2026-09-24: todos los temas de u1–u5 en nivel 1 porque el estudiante asistió a todas las clases de TP0–TP6 (conocimiento superficial, sin ejercicios resueltos solo). Las fechas de las clases no están registradas; solo Taylor tiene ultimo_repaso (sesión guiada del 23/09).",
+    "repaso_2026-09-25": "Niveles sin cambios a pedido del estudiante: un tema sube solo cuando responde bien en un repaso posterior lo que falló. proximo_repaso = 25/09 (tarde, antes del P1) en vez de +2 días, por el parcial."
   }
 }
