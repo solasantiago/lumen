@@ -1,0 +1,32 @@
+# Valida lumen.json en cada push y le avisa a Lumen para que sincronice al instante.
+# Secret opcional LUMEN_DISPATCH_TOKEN: token con "Contents: write" sobre solasantiago/lumen.
+# Sin ese secret igual funciona: Lumen sincroniza solo cada 6 horas.
+name: Lumen
+
+on:
+  push:
+    branches: [main]
+    paths: [lumen.json]
+  workflow_dispatch:
+
+jobs:
+  validar-y-avisar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validar contra el contrato lumen/materia@1
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/solasantiago/lumen/main/scripts/validar.mjs -o "$RUNNER_TEMP/validar.mjs"
+          node "$RUNNER_TEMP/validar.mjs" lumen.json
+      - name: Avisar a Lumen
+        env:
+          GH_TOKEN: ${{ secrets.LUMEN_DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "Sin LUMEN_DISPATCH_TOKEN: Lumen lo va a tomar en la próxima sincronización programada."
+            exit 0
+          fi
+          gh api repos/solasantiago/lumen/dispatches -f event_type=lumen-sync

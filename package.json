@@ -1,0 +1,13 @@
+{
+  "name": "lumen",
+  "private": true,
+  "description": "Mapa de estudio personal: qué está aprendido y qué falta por materia, parcial y unidad.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node scripts/servir.mjs",
+    "validar": "node scripts/validar.mjs",
+    "sincronizar": "node scripts/sincronizar.mjs",
+    "prioridades": "node scripts/prioridades.mjs"
+  }
+}

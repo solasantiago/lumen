@@ -1,0 +1,48 @@
+{
+  "esquema": "lumen/indice@1",
+  "estudiante": "Santiago",
+  "repositorio": "https://github.com/solasantiago/lumen",
+  "carrera": {
+    "nombre": "Ingeniería en Sistemas de Información",
+    "sigla": "ISI",
+    "universidad": "UTN",
+    "facultad": "Facultad Regional Buenos Aires",
+    "plan": "2023",
+    "niveles": 5
+  },
+  "cuatrimestre_actual": "2026-2c",
+  "cuatrimestres": [
+    {
+      "id": "2026-2c",
+      "nombre": "2º cuatrimestre 2026",
+      "inicio": null,
+      "fin": null,
+      "materias": [
+        {
+          "id": "analisis-matematico-2",
+          "archivo": "2026-2c/analisis-matematico-2.json",
+          "color": 1,
+          "icono": "integral",
+          "estado": "cursando",
+          "fuente": null
+        },
+        {
+          "id": "comunicacion-de-datos",
+          "archivo": "2026-2c/comunicacion-de-datos.json",
+          "color": 2,
+          "icono": "senal",
+          "estado": "cursando",
+          "fuente": null
+        },
+        {
+          "id": "sistemas-operativos",
+          "archivo": "2026-2c/sistemas-operativos.json",
+          "color": 3,
+          "icono": "chip",
+          "estado": "cursando",
+          "fuente": null
+        }
+      ]
+    }
+  ]
+}

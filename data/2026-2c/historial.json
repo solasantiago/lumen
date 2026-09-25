@@ -1,0 +1,35 @@
+{
+  "esquema": "lumen/historial@1",
+  "materias": {
+    "analisis-matematico-2": [
+      {
+        "fecha": "2026-09-25",
+        "porcentaje": 0,
+        "evaluaciones": {
+          "p1": 0,
+          "p2": 0
+        }
+      }
+    ],
+    "comunicacion-de-datos": [
+      {
+        "fecha": "2026-09-25",
+        "porcentaje": 0,
+        "evaluaciones": {
+          "p1": 0,
+          "p2": 0
+        }
+      }
+    ],
+    "sistemas-operativos": [
+      {
+        "fecha": "2026-09-25",
+        "porcentaje": 0,
+        "evaluaciones": {
+          "p1": 0,
+          "p2": 0
+        }
+      }
+    ]
+  }
+}

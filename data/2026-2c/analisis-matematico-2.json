@@ -1,0 +1,483 @@
+{
+  "esquema": "lumen/materia@1",
+  "id": "analisis-matematico-2",
+  "nombre": "Análisis Matemático II",
+  "abreviatura": "AM2",
+  "actualizado": "2026-09-25T00:00:00-03:00",
+  "programa": {
+    "plan": "2023",
+    "anio_programa": 2026,
+    "nivel": 2,
+    "area": "Matemática",
+    "bloque": "Formación Básica Homogénea",
+    "horas_reloj": 120,
+    "horas_catedra": 160,
+    "modalidad": "Cuatrimestral",
+    "fuente": "Programa analítico de Análisis Matemático II, UDB Matemática, 2026"
+  },
+  "unidades": [
+    {
+      "id": "edo1",
+      "numero": "X·1",
+      "nombre": "Ecuaciones diferenciales (1ª parte)",
+      "peso": 2,
+      "temas": [
+        {
+          "id": "edo1-tipos-soluciones-problemas-valor",
+          "nombre": "Tipos de soluciones y problemas de valor inicial",
+          "nivel": 0
+        },
+        {
+          "id": "edo1-edo-variables-separables",
+          "nombre": "EDO de variables separables",
+          "nivel": 0
+        },
+        {
+          "id": "edo1-edo-lineales-primer-orden",
+          "nombre": "EDO lineales de primer orden",
+          "nivel": 0
+        },
+        {
+          "id": "edo1-edo-homogeneas",
+          "nombre": "EDO homogéneas",
+          "nivel": 0
+        },
+        {
+          "id": "edo1-ecuacion-diferencial-familia-curvas",
+          "nombre": "Ecuación diferencial de una familia de curvas",
+          "nivel": 0
+        },
+        {
+          "id": "edo1-trayectorias-ortogonales",
+          "nombre": "Trayectorias ortogonales",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u1",
+      "numero": "I",
+      "nombre": "Funciones de varias variables: límite y continuidad",
+      "peso": 4,
+      "temas": [
+        {
+          "id": "u1-topologia-rn-distancia-entornos",
+          "nombre": "Topología en Rⁿ: distancia, entornos, puntos y conjuntos",
+          "nivel": 0
+        },
+        {
+          "id": "u1-campos-escalares-vectoriales-dominio",
+          "nombre": "Campos escalares y vectoriales: dominio, imagen y gráfica",
+          "nivel": 0
+        },
+        {
+          "id": "u1-conjuntos-nivel",
+          "nombre": "Conjuntos de nivel",
+          "nivel": 0
+        },
+        {
+          "id": "u1-limite-campos-iterados-restringidos",
+          "nombre": "Límite de campos: iterados y restringidos a trayectorias",
+          "nivel": 0
+        },
+        {
+          "id": "u1-continuidad-campos-escalares-vectoriales",
+          "nombre": "Continuidad de campos escalares y vectoriales",
+          "nivel": 0
+        },
+        {
+          "id": "u1-curvas-espacio-ecuacion-vectorial",
+          "nombre": "Curvas en el espacio: ecuación vectorial y paramétricas",
+          "nivel": 0
+        },
+        {
+          "id": "u1-superficies-ecuaciones-vectorial-cartesiana",
+          "nombre": "Superficies: ecuaciones vectorial y cartesiana",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "numero": "II",
+      "nombre": "Derivabilidad",
+      "peso": 2,
+      "temas": [
+        {
+          "id": "u2-derivada-funcion-vectorial-variable",
+          "nombre": "Derivada de una función vectorial de una variable",
+          "nivel": 0
+        },
+        {
+          "id": "u2-punto-regular-recta-tangente",
+          "nombre": "Punto regular, recta tangente y plano normal a una curva",
+          "nivel": 0
+        },
+        {
+          "id": "u2-derivadas-parciales-direccionales-respecto",
+          "nombre": "Derivadas parciales, direccionales y respecto de un vector",
+          "nivel": 0
+        },
+        {
+          "id": "u2-interpretacion-geometrica-derivadas",
+          "nombre": "Interpretación geométrica de las derivadas",
+          "nivel": 0
+        },
+        {
+          "id": "u2-teorema-valor-medio",
+          "nombre": "Teorema del valor medio",
+          "nivel": 0
+        },
+        {
+          "id": "u2-derivadas-sucesivas-teorema-schwarz",
+          "nombre": "Derivadas sucesivas y teorema de Schwarz",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "numero": "III",
+      "nombre": "Diferenciabilidad",
+      "peso": 2,
+      "temas": [
+        {
+          "id": "u3-diferenciabilidad-funciones-rn-rm",
+          "nombre": "Diferenciabilidad de funciones de Rⁿ en Rᵐ",
+          "nivel": 0
+        },
+        {
+          "id": "u3-gradiente-matriz-jacobiana",
+          "nombre": "Gradiente y matriz jacobiana",
+          "nivel": 0
+        },
+        {
+          "id": "u3-condicion-suficiente-derivadas-parciales",
+          "nombre": "Condición suficiente: derivadas parciales continuas",
+          "nivel": 0
+        },
+        {
+          "id": "u3-plano-tangente-recta-normal",
+          "nombre": "Plano tangente y recta normal a una superficie",
+          "nivel": 0
+        },
+        {
+          "id": "u3-aproximacion-lineal-diferencial-total",
+          "nombre": "Aproximación lineal y diferencial total",
+          "nivel": 0
+        },
+        {
+          "id": "u3-derivada-direccional-maxima-propiedades",
+          "nombre": "Derivada direccional máxima y propiedades del gradiente",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "numero": "IV",
+      "nombre": "Funciones compuestas e implícitas",
+      "peso": 2,
+      "temas": [
+        {
+          "id": "u4-composicion-funciones",
+          "nombre": "Composición de funciones",
+          "nivel": 0
+        },
+        {
+          "id": "u4-regla-cadena",
+          "nombre": "Regla de la cadena",
+          "nivel": 0
+        },
+        {
+          "id": "u4-teorema-dini-funcion-implicita",
+          "nombre": "Teorema de Dini (función implícita)",
+          "nivel": 0
+        },
+        {
+          "id": "u4-curvas-superficies-definidas-implicitamente",
+          "nombre": "Curvas y superficies definidas implícitamente",
+          "nivel": 0
+        },
+        {
+          "id": "u4-gradiente-perpendicular-conjuntos-nivel",
+          "nombre": "Gradiente perpendicular a los conjuntos de nivel",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "numero": "V",
+      "nombre": "Polinomio de Taylor y extremos",
+      "peso": 2,
+      "temas": [
+        {
+          "id": "u5-diferenciales-sucesivos-formula-taylor",
+          "nombre": "Diferenciales sucesivos y fórmula de Taylor",
+          "nivel": 0
+        },
+        {
+          "id": "u5-extremos-relativos-puntos-estacionarios",
+          "nombre": "Extremos relativos y puntos estacionarios",
+          "nivel": 0
+        },
+        {
+          "id": "u5-condicion-suficiente-matriz-hessiana",
+          "nombre": "Condición suficiente: matriz hessiana",
+          "nivel": 0
+        },
+        {
+          "id": "u5-extremos-absolutos",
+          "nombre": "Extremos absolutos",
+          "nivel": 0
+        },
+        {
+          "id": "u5-extremos-ligados-multiplicadores-lagrange",
+          "nombre": "Extremos ligados: multiplicadores de Lagrange",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "numero": "VI",
+      "nombre": "Integrales de línea",
+      "peso": 3,
+      "temas": [
+        {
+          "id": "u6-longitud-arco-diferencial-arco",
+          "nombre": "Longitud de arco y diferencial de arco",
+          "nivel": 0
+        },
+        {
+          "id": "u6-integral-linea-campos-escalares",
+          "nombre": "Integral de línea de campos escalares",
+          "nivel": 0
+        },
+        {
+          "id": "u6-integral-linea-campos-vectoriales",
+          "nombre": "Integral de línea de campos vectoriales: trabajo",
+          "nivel": 0
+        },
+        {
+          "id": "u6-independencia-camino",
+          "nombre": "Independencia del camino",
+          "nivel": 0
+        },
+        {
+          "id": "u6-funcion-potencial-existencia-calculo",
+          "nombre": "Función potencial: existencia y cálculo",
+          "nivel": 0
+        },
+        {
+          "id": "u6-rotor-campos-irrotacionales-conservativos",
+          "nombre": "Rotor, campos irrotacionales y conservativos",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u7",
+      "numero": "VII",
+      "nombre": "Integrales múltiples",
+      "peso": 4,
+      "temas": [
+        {
+          "id": "u7-integrales-dobles-definicion-calculo",
+          "nombre": "Integrales dobles: definición y cálculo",
+          "nivel": 0
+        },
+        {
+          "id": "u7-calculo-areas-volumenes",
+          "nombre": "Cálculo de áreas y volúmenes",
+          "nivel": 0
+        },
+        {
+          "id": "u7-cambio-variables-integrales-dobles",
+          "nombre": "Cambio de variables en integrales dobles: coordenadas polares",
+          "nivel": 0
+        },
+        {
+          "id": "u7-integrales-triples",
+          "nombre": "Integrales triples",
+          "nivel": 0
+        },
+        {
+          "id": "u7-coordenadas-cilindricas-esfericas",
+          "nombre": "Coordenadas cilíndricas y esféricas",
+          "nivel": 0
+        },
+        {
+          "id": "u7-aplicaciones-fisicas-masa-centro",
+          "nombre": "Aplicaciones físicas: masa, centro de masa y momentos",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u8",
+      "numero": "VIII",
+      "nombre": "Integrales de superficie",
+      "peso": 2,
+      "temas": [
+        {
+          "id": "u8-superficies-regulares-area-superficie",
+          "nombre": "Superficies regulares y área de una superficie",
+          "nivel": 0
+        },
+        {
+          "id": "u8-integral-superficie-campo-escalar",
+          "nombre": "Integral de superficie de un campo escalar",
+          "nivel": 0
+        },
+        {
+          "id": "u8-superficies-orientables",
+          "nombre": "Superficies orientables",
+          "nivel": 0
+        },
+        {
+          "id": "u8-flujo-campo-vectorial",
+          "nombre": "Flujo de un campo vectorial",
+          "nivel": 0
+        },
+        {
+          "id": "u8-aplicaciones-integrales-superficie",
+          "nombre": "Aplicaciones de las integrales de superficie",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u9",
+      "numero": "IX",
+      "nombre": "Teoremas integrales",
+      "peso": 3,
+      "temas": [
+        {
+          "id": "u9-divergencia-campo-vectorial",
+          "nombre": "Divergencia de un campo vectorial",
+          "nivel": 0
+        },
+        {
+          "id": "u9-teorema-gauss-divergencia",
+          "nombre": "Teorema de Gauss (de la divergencia)",
+          "nivel": 0
+        },
+        {
+          "id": "u9-campos-solenoidales",
+          "nombre": "Campos solenoidales",
+          "nivel": 0
+        },
+        {
+          "id": "u9-teorema-green",
+          "nombre": "Teorema de Green",
+          "nivel": 0
+        },
+        {
+          "id": "u9-teorema-stokes-rotor",
+          "nombre": "Teorema de Stokes (del rotor)",
+          "nivel": 0
+        },
+        {
+          "id": "u9-funcion-potencial-regiones-multiplemente",
+          "nombre": "Función potencial en regiones múltiplemente conexas",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "edo2",
+      "numero": "X·2",
+      "nombre": "Ecuaciones diferenciales (2ª parte)",
+      "peso": 3,
+      "temas": [
+        {
+          "id": "edo2-edo-totales-exactas",
+          "nombre": "EDO totales exactas",
+          "nivel": 0
+        },
+        {
+          "id": "edo2-lineas-campo",
+          "nombre": "Líneas de campo",
+          "nivel": 0
+        },
+        {
+          "id": "edo2-lineas-campo-equipotenciales-campos",
+          "nombre": "Líneas de campo y equipotenciales de campos conservativos",
+          "nivel": 0
+        },
+        {
+          "id": "edo2-edo-lineales-segundo-orden",
+          "nombre": "EDO lineales de segundo orden: homogénea y wronskiano",
+          "nivel": 0
+        },
+        {
+          "id": "edo2-coeficientes-constantes-solucion-homogenea",
+          "nombre": "Coeficientes constantes: solución de la homogénea",
+          "nivel": 0
+        },
+        {
+          "id": "edo2-metodo-coeficientes-indeterminados",
+          "nombre": "Método de coeficientes indeterminados",
+          "nivel": 0
+        },
+        {
+          "id": "edo2-metodo-variacion-parametros",
+          "nombre": "Método de variación de parámetros",
+          "nivel": 0
+        },
+        {
+          "id": "edo2-sistemas-edo-lineales-coeficientes",
+          "nombre": "Sistemas de EDO lineales con coeficientes constantes",
+          "nivel": 0
+        }
+      ]
+    }
+  ],
+  "evaluaciones": [
+    {
+      "id": "p1",
+      "nombre": "1er parcial",
+      "tipo": "parcial",
+      "fecha": null,
+      "unidades": [
+        "edo1",
+        "u1",
+        "u2",
+        "u3",
+        "u4",
+        "u5"
+      ],
+      "nota": null,
+      "estado": "pendiente"
+    },
+    {
+      "id": "p2",
+      "nombre": "2do parcial",
+      "tipo": "parcial",
+      "fecha": null,
+      "unidades": [
+        "u6",
+        "u7",
+        "u8",
+        "u9",
+        "edo2"
+      ],
+      "nota": null,
+      "estado": "pendiente"
+    }
+  ],
+  "aprobacion": {
+    "promocion": {
+      "nota_minima": 8,
+      "descripcion": "Aprobar ambos parciales con 8 o más: 4 de los 6 ítems bien resueltos, con al menos 1 teórico."
+    },
+    "regularizacion": {
+      "nota_minima": 6,
+      "descripcion": "Aprobar ambos parciales con 6 o más: 2 de los 4 ítems prácticos bien resueltos (no cuentan los teóricos)."
+    },
+    "notas": "Complementarios y recuperatorios según el régimen de la UDB Matemática."
+  },
+  "sesiones": []
+}

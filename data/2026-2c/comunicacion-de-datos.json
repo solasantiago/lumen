@@ -1,0 +1,449 @@
+{
+  "esquema": "lumen/materia@1",
+  "id": "comunicacion-de-datos",
+  "nombre": "Comunicación de Datos",
+  "abreviatura": "CD",
+  "actualizado": "2026-09-25T00:00:00-03:00",
+  "programa": {
+    "plan": "2023",
+    "nivel": 4,
+    "area": "Computación",
+    "bloque": "Tecnología Básica",
+    "horas_reloj": 96,
+    "horas_catedra": 128,
+    "modalidad": "Cuatrimestral",
+    "fuente": "Programa analítico de Comunicación de Datos, Plan 2023"
+  },
+  "unidades": [
+    {
+      "id": "u1",
+      "numero": "1",
+      "nombre": "Introducción a las comunicaciones",
+      "peso": 1,
+      "temas": [
+        {
+          "id": "u1-informatica-telecomunicaciones-teleinformatica",
+          "nombre": "Informática, telecomunicaciones y teleinformática",
+          "nivel": 0
+        },
+        {
+          "id": "u1-transmision-datos-definicion-concepto",
+          "nombre": "Transmisión de datos: definición y concepto",
+          "nivel": 0
+        },
+        {
+          "id": "u1-modos-explotacion-sistemas-teleinformaticos",
+          "nombre": "Modos de explotación de sistemas teleinformáticos",
+          "nivel": 0
+        },
+        {
+          "id": "u1-circuito-teleinformatico-sobre-redes",
+          "nombre": "Circuito teleinformático sobre redes analógicas",
+          "nivel": 0
+        },
+        {
+          "id": "u1-enlace-circuito-datos",
+          "nombre": "Enlace y circuito de datos",
+          "nivel": 0
+        },
+        {
+          "id": "u1-internet-historia-equipos-organizacion",
+          "nombre": "Internet: historia, equipos y organización",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "numero": "2",
+      "nombre": "Características de las señales",
+      "peso": 1,
+      "temas": [
+        {
+          "id": "u2-senales-analogicas-digitales",
+          "nombre": "Señales analógicas y digitales",
+          "nivel": 0
+        },
+        {
+          "id": "u2-senales-periodicas-serie-fourier",
+          "nombre": "Señales periódicas y serie de Fourier",
+          "nivel": 0
+        },
+        {
+          "id": "u2-transmision-medios-conductores-dielectricos",
+          "nombre": "Transmisión en medios conductores y dieléctricos",
+          "nivel": 0
+        },
+        {
+          "id": "u2-espectro-electromagnetico-unidades-medida",
+          "nombre": "Espectro electromagnético y unidades de medida",
+          "nivel": 0
+        },
+        {
+          "id": "u2-ancho-banda-efecto-sobre",
+          "nombre": "Ancho de banda y su efecto sobre la señal",
+          "nivel": 0
+        },
+        {
+          "id": "u2-transmision-banda-base",
+          "nombre": "Transmisión en banda base",
+          "nivel": 0
+        },
+        {
+          "id": "u2-codigos-banda-base-normalizados",
+          "nombre": "Códigos de banda base normalizados por la UIT-T",
+          "nivel": 0
+        },
+        {
+          "id": "u2-filtros",
+          "nombre": "Filtros",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "numero": "3",
+      "nombre": "Redes de telecomunicaciones",
+      "peso": 1,
+      "temas": [
+        {
+          "id": "u3-medidas-velocidad-bps-baudios",
+          "nombre": "Medidas de velocidad: bps y baudios",
+          "nivel": 0
+        },
+        {
+          "id": "u3-ancho-banda-velocidad-modulacion",
+          "nombre": "Ancho de banda, velocidad de modulación y tasa de errores",
+          "nivel": 0
+        },
+        {
+          "id": "u3-transmision-multinivel-compresion-datos",
+          "nombre": "Transmisión multinivel y compresión de datos",
+          "nivel": 0
+        },
+        {
+          "id": "u3-transmision-serie-paralelo-asincronica",
+          "nombre": "Transmisión serie/paralelo y asincrónica/sincrónica",
+          "nivel": 0
+        },
+        {
+          "id": "u3-tipos-enlaces-topologias-red",
+          "nombre": "Tipos de enlaces y topologías de red",
+          "nivel": 0
+        },
+        {
+          "id": "u3-red-telefonica-publica-conmutada",
+          "nombre": "Red telefónica pública conmutada",
+          "nivel": 0
+        },
+        {
+          "id": "u3-ingenieria-trafico-grado-servicio",
+          "nombre": "Ingeniería de tráfico y grado de servicio",
+          "nivel": 0
+        },
+        {
+          "id": "u3-protocolos-arquitecturas-comunicaciones",
+          "nombre": "Protocolos y arquitecturas de comunicaciones",
+          "nivel": 0
+        },
+        {
+          "id": "u3-protocolos-enlace-orientados-caracter",
+          "nombre": "Protocolos de enlace orientados al carácter y al bit",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "numero": "4",
+      "nombre": "Modulación, digitalización y multiplexación",
+      "peso": 1,
+      "temas": [
+        {
+          "id": "u4-clasificacion-tecnicas-modulacion",
+          "nombre": "Clasificación de las técnicas de modulación",
+          "nivel": 0
+        },
+        {
+          "id": "u4-modulacion-amplitud-frecuencia-fase",
+          "nombre": "Modulación de amplitud, frecuencia y fase",
+          "nivel": 0
+        },
+        {
+          "id": "u4-muestreo-cuantificacion-codificacion",
+          "nombre": "Muestreo, cuantificación y codificación",
+          "nivel": 0
+        },
+        {
+          "id": "u4-modulacion-pulsos-analogica-digital",
+          "nombre": "Modulación por pulsos analógica y digital",
+          "nivel": 0
+        },
+        {
+          "id": "u4-pcm-variantes",
+          "nombre": "PCM y sus variantes",
+          "nivel": 0
+        },
+        {
+          "id": "u4-multiplexacion-fdm-tdm",
+          "nombre": "Multiplexación FDM y TDM",
+          "nivel": 0
+        },
+        {
+          "id": "u4-pdh-sdh-sonet",
+          "nombre": "PDH, SDH y SONET",
+          "nivel": 0
+        },
+        {
+          "id": "u4-tdm-estadistica-stdm",
+          "nombre": "TDM estadística (STDM)",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "numero": "5",
+      "nombre": "Teoría de la información y de la codificación",
+      "peso": 1,
+      "temas": [
+        {
+          "id": "u5-medida-informacion",
+          "nombre": "Medida de la información",
+          "nivel": 0
+        },
+        {
+          "id": "u5-entropia-tasa-informacion",
+          "nombre": "Entropía y tasa de información",
+          "nivel": 0
+        },
+        {
+          "id": "u5-capacidad-canal-tasa-informacion",
+          "nombre": "Capacidad del canal y tasa de información",
+          "nivel": 0
+        },
+        {
+          "id": "u5-clasificacion-parametros-codigos",
+          "nombre": "Clasificación y parámetros de los códigos",
+          "nivel": 0
+        },
+        {
+          "id": "u5-alfabeto-internacional-no-2",
+          "nombre": "Alfabeto Internacional Nº 2 (télex)",
+          "nivel": 0
+        },
+        {
+          "id": "u5-codigos-informaticos-bcd-ebcdic",
+          "nombre": "Códigos informáticos: BCD, EBCDIC y PC-8",
+          "nivel": 0
+        },
+        {
+          "id": "u5-ascii-alfabeto-internacional-no",
+          "nombre": "ASCII / Alfabeto Internacional Nº 5 y caracteres de control",
+          "nivel": 0
+        },
+        {
+          "id": "u5-recomendacion-t-51-juegos",
+          "nombre": "Recomendación T.51 y juegos de caracteres para telemática",
+          "nivel": 0
+        },
+        {
+          "id": "u5-eficiencia-redundancia-codigos",
+          "nombre": "Eficiencia y redundancia de códigos",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "numero": "6",
+      "nombre": "Canales de comunicaciones",
+      "peso": 1,
+      "temas": [
+        {
+          "id": "u6-tipos-canales-ideales-reales",
+          "nombre": "Tipos de canales: ideales y reales",
+          "nivel": 0
+        },
+        {
+          "id": "u6-capacidad-canal-teorema-shannon",
+          "nombre": "Capacidad de un canal: teorema de Shannon-Hartley",
+          "nivel": 0
+        },
+        {
+          "id": "u6-senalizacion-analogica-digital",
+          "nombre": "Señalización analógica y digital",
+          "nivel": 0
+        },
+        {
+          "id": "u6-ruido-distorsion-relacion-senal",
+          "nombre": "Ruido, distorsión y relación señal/ruido",
+          "nivel": 0
+        },
+        {
+          "id": "u6-normas-calidad-canales-eco",
+          "nombre": "Normas de calidad de canales, eco y ecualización",
+          "nivel": 0
+        },
+        {
+          "id": "u6-tipos-errores-tasa-error",
+          "nombre": "Tipos de errores y tasa de error",
+          "nivel": 0
+        },
+        {
+          "id": "u6-deteccion-errores-paridad-crc",
+          "nombre": "Detección de errores: paridad y CRC",
+          "nivel": 0
+        },
+        {
+          "id": "u6-correccion-errores-codigos-autocorrectores",
+          "nombre": "Corrección de errores y códigos autocorrectores",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u7",
+      "numero": "7",
+      "nombre": "Medios de comunicaciones",
+      "peso": 1,
+      "temas": [
+        {
+          "id": "u7-par-trenzado-cableado-estructurado",
+          "nombre": "Par trenzado y cableado estructurado",
+          "nivel": 0
+        },
+        {
+          "id": "u7-cables-multipares",
+          "nombre": "Cables multipares",
+          "nivel": 0
+        },
+        {
+          "id": "u7-cable-coaxial",
+          "nombre": "Cable coaxial",
+          "nivel": 0
+        },
+        {
+          "id": "u7-fibra-optica-principios-tipos",
+          "nombre": "Fibra óptica: principios y tipos",
+          "nivel": 0
+        },
+        {
+          "id": "u7-perdidas-fibras-opticas-sistemas",
+          "nombre": "Pérdidas en fibras ópticas y sistemas optoelectrónicos",
+          "nivel": 0
+        },
+        {
+          "id": "u7-radiocomunicaciones-propagacion-ondas",
+          "nombre": "Radiocomunicaciones y propagación de ondas",
+          "nivel": 0
+        },
+        {
+          "id": "u7-microondas-antenas",
+          "nombre": "Microondas y antenas",
+          "nivel": 0
+        },
+        {
+          "id": "u7-comunicaciones-satelitales",
+          "nombre": "Comunicaciones satelitales",
+          "nivel": 0
+        },
+        {
+          "id": "u7-guia-onda-laser",
+          "nombre": "Guía de onda y láser",
+          "nivel": 0
+        },
+        {
+          "id": "u7-redes-inalambricas-voz-datos",
+          "nombre": "Redes inalámbricas de voz y datos",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u8",
+      "numero": "8",
+      "nombre": "Hardware de comunicaciones",
+      "peso": 1,
+      "temas": [
+        {
+          "id": "u8-interfaces-capa-fisica",
+          "nombre": "Interfaces de la capa física",
+          "nivel": 0
+        },
+        {
+          "id": "u8-norma-v-24-rs",
+          "nombre": "Norma V.24 / RS-232",
+          "nivel": 0
+        },
+        {
+          "id": "u8-interfaces-rs-449-x",
+          "nombre": "Interfaces RS-449, X.21 y V.35",
+          "nivel": 0
+        },
+        {
+          "id": "u8-modems-funciones-clasificacion",
+          "nombre": "Módems: funciones y clasificación",
+          "nivel": 0
+        },
+        {
+          "id": "u8-modulacion-qam-codificacion-entrelazada",
+          "nombre": "Modulación QAM con codificación entrelazada",
+          "nivel": 0
+        },
+        {
+          "id": "u8-control-flujo-correccion-errores",
+          "nombre": "Control de flujo, corrección de errores y compresión en módems",
+          "nivel": 0
+        },
+        {
+          "id": "u8-modems-v-34-56k",
+          "nombre": "Módems V.34 y 56K",
+          "nivel": 0
+        },
+        {
+          "id": "u8-diagnostico-pruebas-modems",
+          "nombre": "Diagnóstico y pruebas de módems",
+          "nivel": 0
+        }
+      ]
+    }
+  ],
+  "evaluaciones": [
+    {
+      "id": "p1",
+      "nombre": "1er parcial",
+      "tipo": "parcial",
+      "fecha": null,
+      "unidades": [
+        "u1",
+        "u2",
+        "u3",
+        "u4"
+      ],
+      "nota": null,
+      "estado": "pendiente"
+    },
+    {
+      "id": "p2",
+      "nombre": "2do parcial",
+      "tipo": "parcial",
+      "fecha": null,
+      "unidades": [
+        "u5",
+        "u6",
+        "u7",
+        "u8"
+      ],
+      "nota": null,
+      "estado": "pendiente"
+    }
+  ],
+  "aprobacion": {
+    "promocion": null,
+    "regularizacion": null,
+    "notas": "El programa no detalla el régimen de aprobación. Completarlo con lo que informe la cátedra."
+  },
+  "sesiones": []
+}

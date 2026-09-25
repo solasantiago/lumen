@@ -1,0 +1,478 @@
+{
+  "esquema": "lumen/materia@1",
+  "id": "sistemas-operativos",
+  "nombre": "Sistemas Operativos",
+  "abreviatura": "SO",
+  "actualizado": "2026-09-25T00:00:00-03:00",
+  "programa": {
+    "plan": "2023",
+    "nivel": 2,
+    "area": "Computación y Comunicación de Datos",
+    "bloque": "Tecnologías Aplicadas",
+    "horas_reloj": 96,
+    "horas_catedra": 128,
+    "modalidad": "Cuatrimestral",
+    "fuente": "Programa analítico de Sistemas Operativos, Plan 2023"
+  },
+  "unidades": [
+    {
+      "id": "u1",
+      "numero": "1",
+      "nombre": "Introducción a los sistemas operativos",
+      "peso": 1,
+      "temas": [
+        {
+          "id": "u1-concepto-funciones-sistema-operativo",
+          "nombre": "Concepto y funciones de un sistema operativo",
+          "nivel": 0
+        },
+        {
+          "id": "u1-tipos-sistemas-operativos",
+          "nombre": "Tipos de sistemas operativos",
+          "nivel": 0
+        },
+        {
+          "id": "u1-soporte-hardware-interrupciones-modos",
+          "nombre": "Soporte de hardware: interrupciones y modos usuario/kernel",
+          "nivel": 0
+        },
+        {
+          "id": "u1-arquitecturas-kernel",
+          "nombre": "Arquitecturas de kernel",
+          "nivel": 0
+        },
+        {
+          "id": "u1-componentes-interfaces-usuario-administradores",
+          "nombre": "Componentes: interfaces de usuario, administradores y kernel",
+          "nivel": 0
+        },
+        {
+          "id": "u1-nucleo-vs-distribucion",
+          "nombre": "Núcleo vs. distribución",
+          "nivel": 0
+        },
+        {
+          "id": "u1-llamadas-sistema-syscalls",
+          "nombre": "Llamadas al sistema (syscalls)",
+          "nivel": 0
+        },
+        {
+          "id": "u1-sistemas-operativos-multiprocesador-tiempo",
+          "nombre": "Sistemas operativos multiprocesador y de tiempo real",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "numero": "2",
+      "nombre": "De programa a procesos",
+      "peso": 1,
+      "temas": [
+        {
+          "id": "u2-proceso-vs-programa",
+          "nombre": "Proceso vs. programa",
+          "nivel": 0
+        },
+        {
+          "id": "u2-bloque-control-proceso-pcb",
+          "nombre": "Bloque de control del proceso (PCB)",
+          "nivel": 0
+        },
+        {
+          "id": "u2-estados-transiciones-proceso",
+          "nombre": "Estados y transiciones de un proceso",
+          "nivel": 0
+        },
+        {
+          "id": "u2-operaciones-control-procesos",
+          "nombre": "Operaciones y control de procesos",
+          "nivel": 0
+        },
+        {
+          "id": "u2-procesos-cpu-bound-i",
+          "nombre": "Procesos CPU bound e I/O bound",
+          "nivel": 0
+        },
+        {
+          "id": "u2-contexto-cambio-contexto-cambio",
+          "nombre": "Contexto, cambio de contexto y cambio de proceso",
+          "nivel": 0
+        },
+        {
+          "id": "u2-hilos-implementacion-ciclo-vida",
+          "nombre": "Hilos: implementación y ciclo de vida",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "numero": "3",
+      "nombre": "Planificación de procesos y procesadores",
+      "peso": 1,
+      "temas": [
+        {
+          "id": "u3-niveles-planificacion-largo-mediano",
+          "nombre": "Niveles de planificación: largo, mediano y corto plazo",
+          "nivel": 0
+        },
+        {
+          "id": "u3-criterios-planificacion-politica-vs",
+          "nombre": "Criterios de planificación: política vs. mecanismo",
+          "nivel": 0
+        },
+        {
+          "id": "u3-algoritmos-no-apropiativos-fcfs",
+          "nombre": "Algoritmos no apropiativos: FCFS y SPN",
+          "nivel": 0
+        },
+        {
+          "id": "u3-planificacion-prioridades",
+          "nombre": "Planificación por prioridades",
+          "nivel": 0
+        },
+        {
+          "id": "u3-round-robin-virtual-round",
+          "nombre": "Round Robin y Virtual Round Robin",
+          "nivel": 0
+        },
+        {
+          "id": "u3-srt-hrrn",
+          "nombre": "SRT y HRRN",
+          "nivel": 0
+        },
+        {
+          "id": "u3-colas-multinivel-sin-realimentacion",
+          "nombre": "Colas multinivel con y sin realimentación",
+          "nivel": 0
+        },
+        {
+          "id": "u3-planificacion-reparto-equitativo",
+          "nombre": "Planificación de reparto equitativo",
+          "nivel": 0
+        },
+        {
+          "id": "u3-planificacion-multiprocesadores-afinidad",
+          "nombre": "Planificación en multiprocesadores y afinidad",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "numero": "4",
+      "nombre": "Sincronización y comunicación entre procesos",
+      "peso": 1,
+      "temas": [
+        {
+          "id": "u4-grafos-precedencia-condiciones-bernstein",
+          "nombre": "Grafos de precedencia y condiciones de Bernstein",
+          "nivel": 0
+        },
+        {
+          "id": "u4-problema-region-critica",
+          "nombre": "Problema de la región crítica",
+          "nivel": 0
+        },
+        {
+          "id": "u4-espera-activa-alternancia-peterson",
+          "nombre": "Espera activa: alternancia, Peterson y Dekker",
+          "nivel": 0
+        },
+        {
+          "id": "u4-mecanismos-provistos-hardware",
+          "nombre": "Mecanismos provistos por el hardware",
+          "nivel": 0
+        },
+        {
+          "id": "u4-semaforos-espera-activa-bloqueo",
+          "nombre": "Semáforos: con espera activa y con bloqueo",
+          "nivel": 0
+        },
+        {
+          "id": "u4-monitores",
+          "nombre": "Monitores",
+          "nivel": 0
+        },
+        {
+          "id": "u4-ipc-paso-mensajes",
+          "nombre": "IPC y paso de mensajes",
+          "nivel": 0
+        },
+        {
+          "id": "u4-productor-consumidor",
+          "nombre": "Productor-consumidor",
+          "nivel": 0
+        },
+        {
+          "id": "u4-deadlock-condiciones-grafo-asignacion",
+          "nombre": "Deadlock: condiciones y grafo de asignación de recursos",
+          "nivel": 0
+        },
+        {
+          "id": "u4-estrategias-tratar-deadlocks",
+          "nombre": "Estrategias para tratar deadlocks",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "numero": "5",
+      "nombre": "Administración de memoria",
+      "peso": 1,
+      "temas": [
+        {
+          "id": "u5-funciones-administrador-memoria",
+          "nombre": "Funciones del administrador de memoria",
+          "nivel": 0
+        },
+        {
+          "id": "u5-particiones-fijas-variables",
+          "nombre": "Particiones fijas y variables",
+          "nivel": 0
+        },
+        {
+          "id": "u5-paginacion-pura",
+          "nombre": "Paginación pura",
+          "nivel": 0
+        },
+        {
+          "id": "u5-segmentacion-simple",
+          "nombre": "Segmentación simple",
+          "nivel": 0
+        },
+        {
+          "id": "u5-buddy-system",
+          "nombre": "Buddy system",
+          "nivel": 0
+        },
+        {
+          "id": "u5-memoria-virtual-paginacion-demanda",
+          "nombre": "Memoria virtual y paginación por demanda",
+          "nivel": 0
+        },
+        {
+          "id": "u5-fallo-pagina",
+          "nombre": "Fallo de página",
+          "nivel": 0
+        },
+        {
+          "id": "u5-segmentacion-paginacion-demanda",
+          "nombre": "Segmentación con paginación por demanda",
+          "nivel": 0
+        },
+        {
+          "id": "u5-conjunto-residente-politicas-asignacion",
+          "nombre": "Conjunto residente y políticas de asignación",
+          "nivel": 0
+        },
+        {
+          "id": "u5-algoritmos-reemplazo-paginas",
+          "nombre": "Algoritmos de reemplazo de páginas",
+          "nivel": 0
+        },
+        {
+          "id": "u5-thrashing-tratamiento-prevencion",
+          "nombre": "Thrashing: tratamiento y prevención",
+          "nivel": 0
+        },
+        {
+          "id": "u5-bloqueo-paginas-page-buffering",
+          "nombre": "Bloqueo de páginas y page buffering",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "numero": "6",
+      "nombre": "Gestión de entrada/salida",
+      "peso": 1,
+      "temas": [
+        {
+          "id": "u6-s-programada-interrupciones-dma",
+          "nombre": "E/S programada, por interrupciones y por DMA",
+          "nivel": 0
+        },
+        {
+          "id": "u6-funciones-administrador-s",
+          "nombre": "Funciones del administrador de E/S",
+          "nivel": 0
+        },
+        {
+          "id": "u6-buffering-s",
+          "nombre": "Buffering de E/S",
+          "nivel": 0
+        },
+        {
+          "id": "u6-planificacion-disco-hdd-diferencias",
+          "nombre": "Planificación de disco en HDD y diferencias con SSD",
+          "nivel": 0
+        },
+        {
+          "id": "u6-niveles-raid",
+          "nombre": "Niveles de RAID",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u7",
+      "numero": "7",
+      "nombre": "Sistema de gestión de archivos",
+      "peso": 1,
+      "temas": [
+        {
+          "id": "u7-concepto-tipos-atributos-archivo",
+          "nombre": "Concepto, tipos y atributos de archivo",
+          "nivel": 0
+        },
+        {
+          "id": "u7-operaciones-sobre-archivos",
+          "nombre": "Operaciones sobre archivos",
+          "nivel": 0
+        },
+        {
+          "id": "u7-estructuras-directorio",
+          "nombre": "Estructuras de directorio",
+          "nivel": 0
+        },
+        {
+          "id": "u7-metodos-acceso",
+          "nombre": "Métodos de acceso",
+          "nivel": 0
+        },
+        {
+          "id": "u7-asignacion-espacio-gestion-espacio",
+          "nombre": "Asignación de espacio y gestión del espacio libre",
+          "nivel": 0
+        },
+        {
+          "id": "u7-proteccion-matriz-acceso-acl",
+          "nombre": "Protección: matriz de acceso, ACL y propietario/grupo/otros",
+          "nivel": 0
+        },
+        {
+          "id": "u7-archivos-mapeados-memoria",
+          "nombre": "Archivos mapeados a memoria",
+          "nivel": 0
+        },
+        {
+          "id": "u7-implementaciones-actuales-sistemas-archivos",
+          "nombre": "Implementaciones actuales de sistemas de archivos",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u8",
+      "numero": "8",
+      "nombre": "Protección y seguridad",
+      "peso": 1,
+      "temas": [
+        {
+          "id": "u8-seguridad-nivel-hardware-memoria",
+          "nombre": "Seguridad a nivel hardware, memoria y sistema de archivos",
+          "nivel": 0
+        },
+        {
+          "id": "u8-usuarios-administrador-autenticacion-autorizacion",
+          "nombre": "Usuarios, administrador, autenticación y autorización",
+          "nivel": 0
+        },
+        {
+          "id": "u8-modelo-permisos-procesos-usuarios",
+          "nombre": "Modelo de permisos de procesos, usuarios y archivos",
+          "nivel": 0
+        },
+        {
+          "id": "u8-escalamiento-privilegios",
+          "nombre": "Escalamiento de privilegios",
+          "nivel": 0
+        },
+        {
+          "id": "u8-buffer-overflow-como-ataque",
+          "nombre": "Buffer overflow como ataque",
+          "nivel": 0
+        },
+        {
+          "id": "u8-hardening-patching-firewalls-antivirus",
+          "nombre": "Hardening: patching, firewalls, antivirus y logging",
+          "nivel": 0
+        }
+      ]
+    },
+    {
+      "id": "u9",
+      "numero": "9",
+      "nombre": "Fundamentos de virtualización",
+      "peso": 1,
+      "temas": [
+        {
+          "id": "u9-maquina-virtual-hipervisor",
+          "nombre": "Máquina virtual e hipervisor",
+          "nivel": 0
+        },
+        {
+          "id": "u9-motivaciones-beneficios-virtualizacion",
+          "nombre": "Motivaciones y beneficios de la virtualización",
+          "nivel": 0
+        },
+        {
+          "id": "u9-virtualizacion-sin-sistema-operativo",
+          "nombre": "Virtualización con y sin sistema operativo anfitrión",
+          "nivel": 0
+        },
+        {
+          "id": "u9-optimizaciones-asistidas-software-hardware",
+          "nombre": "Optimizaciones asistidas por software y por hardware",
+          "nivel": 0
+        },
+        {
+          "id": "u9-virtualizacion-nivel-sistema-operativo",
+          "nombre": "Virtualización a nivel sistema operativo: contenedores",
+          "nivel": 0
+        }
+      ]
+    }
+  ],
+  "evaluaciones": [
+    {
+      "id": "p1",
+      "nombre": "1er parcial",
+      "tipo": "parcial",
+      "fecha": null,
+      "unidades": [
+        "u1",
+        "u2",
+        "u3",
+        "u4"
+      ],
+      "nota": null,
+      "estado": "pendiente"
+    },
+    {
+      "id": "p2",
+      "nombre": "2do parcial",
+      "tipo": "parcial",
+      "fecha": null,
+      "unidades": [
+        "u5",
+        "u6",
+        "u7",
+        "u8",
+        "u9"
+      ],
+      "nota": null,
+      "estado": "pendiente"
+    }
+  ],
+  "aprobacion": {
+    "promocion": null,
+    "regularizacion": null,
+    "notas": "El programa no detalla el régimen de aprobación. Completarlo con lo que informe la cátedra."
+  },
+  "sesiones": []
+}
