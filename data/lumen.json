@@ -24,7 +24,11 @@
           "color": 1,
           "icono": "integral",
           "estado": "cursando",
-          "fuente": null
+          "fuente": {
+            "repo": "solasantiago/amii",
+            "ruta": "lumen.json",
+            "rama": "main"
+          }
         },
         {
           "id": "comunicacion-de-datos",

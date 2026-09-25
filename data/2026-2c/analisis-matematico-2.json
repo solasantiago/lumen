@@ -3,7 +3,7 @@
   "id": "analisis-matematico-2",
   "nombre": "Análisis Matemático II",
   "abreviatura": "AM2",
-  "actualizado": "2026-09-25T00:00:00-03:00",
+  "actualizado": "2026-09-24T22:55:00-03:00",
   "programa": {
     "plan": "2023",
     "anio_programa": 2026,
@@ -63,37 +63,42 @@
         {
           "id": "u1-topologia-rn-distancia-entornos",
           "nombre": "Topología en Rⁿ: distancia, entornos, puntos y conjuntos",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u1-campos-escalares-vectoriales-dominio",
           "nombre": "Campos escalares y vectoriales: dominio, imagen y gráfica",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u1-conjuntos-nivel",
           "nombre": "Conjuntos de nivel",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u1-limite-campos-iterados-restringidos",
           "nombre": "Límite de campos: iterados y restringidos a trayectorias",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u1-continuidad-campos-escalares-vectoriales",
           "nombre": "Continuidad de campos escalares y vectoriales",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u1-curvas-espacio-ecuacion-vectorial",
           "nombre": "Curvas en el espacio: ecuación vectorial y paramétricas",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u1-superficies-ecuaciones-vectorial-cartesiana",
           "nombre": "Superficies: ecuaciones vectorial y cartesiana",
-          "nivel": 0
+          "nivel": 1
+        },
+        {
+          "id": "u1-repaso-planos-cuadricas",
+          "nombre": "Repaso: planos, superficies cuádricas e intersecciones en R³ (TP0)",
+          "nivel": 1
         }
       ]
     },
@@ -106,32 +111,32 @@
         {
           "id": "u2-derivada-funcion-vectorial-variable",
           "nombre": "Derivada de una función vectorial de una variable",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u2-punto-regular-recta-tangente",
           "nombre": "Punto regular, recta tangente y plano normal a una curva",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u2-derivadas-parciales-direccionales-respecto",
           "nombre": "Derivadas parciales, direccionales y respecto de un vector",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u2-interpretacion-geometrica-derivadas",
           "nombre": "Interpretación geométrica de las derivadas",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u2-teorema-valor-medio",
           "nombre": "Teorema del valor medio",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u2-derivadas-sucesivas-teorema-schwarz",
           "nombre": "Derivadas sucesivas y teorema de Schwarz",
-          "nivel": 0
+          "nivel": 1
         }
       ]
     },
@@ -144,32 +149,32 @@
         {
           "id": "u3-diferenciabilidad-funciones-rn-rm",
           "nombre": "Diferenciabilidad de funciones de Rⁿ en Rᵐ",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u3-gradiente-matriz-jacobiana",
           "nombre": "Gradiente y matriz jacobiana",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u3-condicion-suficiente-derivadas-parciales",
           "nombre": "Condición suficiente: derivadas parciales continuas",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u3-plano-tangente-recta-normal",
           "nombre": "Plano tangente y recta normal a una superficie",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u3-aproximacion-lineal-diferencial-total",
           "nombre": "Aproximación lineal y diferencial total",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u3-derivada-direccional-maxima-propiedades",
           "nombre": "Derivada direccional máxima y propiedades del gradiente",
-          "nivel": 0
+          "nivel": 1
         }
       ]
     },
@@ -182,27 +187,27 @@
         {
           "id": "u4-composicion-funciones",
           "nombre": "Composición de funciones",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u4-regla-cadena",
           "nombre": "Regla de la cadena",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u4-teorema-dini-funcion-implicita",
           "nombre": "Teorema de Dini (función implícita)",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u4-curvas-superficies-definidas-implicitamente",
           "nombre": "Curvas y superficies definidas implícitamente",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u4-gradiente-perpendicular-conjuntos-nivel",
           "nombre": "Gradiente perpendicular a los conjuntos de nivel",
-          "nivel": 0
+          "nivel": 1
         }
       ]
     },
@@ -215,27 +220,32 @@
         {
           "id": "u5-diferenciales-sucesivos-formula-taylor",
           "nombre": "Diferenciales sucesivos y fórmula de Taylor",
-          "nivel": 0
+          "nivel": 1,
+          "evidencia": {
+            "ultimo_repaso": "2026-09-23",
+            "proximo_repaso": "2026-09-25"
+          },
+          "notas": "TP6 ej. 1–6 vistos en modo guiado (23/09); todavía sin ejercicios resueltos solo."
         },
         {
           "id": "u5-extremos-relativos-puntos-estacionarios",
           "nombre": "Extremos relativos y puntos estacionarios",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u5-condicion-suficiente-matriz-hessiana",
           "nombre": "Condición suficiente: matriz hessiana",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u5-extremos-absolutos",
           "nombre": "Extremos absolutos",
-          "nivel": 0
+          "nivel": 1
         },
         {
           "id": "u5-extremos-ligados-multiplicadores-lagrange",
           "nombre": "Extremos ligados: multiplicadores de Lagrange",
-          "nivel": 0
+          "nivel": 1
         }
       ]
     },
@@ -273,6 +283,11 @@
         {
           "id": "u6-rotor-campos-irrotacionales-conservativos",
           "nombre": "Rotor, campos irrotacionales y conservativos",
+          "nivel": 0
+        },
+        {
+          "id": "u6-triedro-intrinseco-curvaturas",
+          "nombre": "Triedro intrínseco y curvaturas de flexión y torsión",
           "nivel": 0
         }
       ]
@@ -440,9 +455,8 @@
       "id": "p1",
       "nombre": "1er parcial",
       "tipo": "parcial",
-      "fecha": null,
+      "fecha": "2026-09-25",
       "unidades": [
-        "edo1",
         "u1",
         "u2",
         "u3",
@@ -462,6 +476,7 @@
         "u7",
         "u8",
         "u9",
+        "edo1",
         "edo2"
       ],
       "nota": null,
@@ -471,13 +486,16 @@
   "aprobacion": {
     "promocion": {
       "nota_minima": 8,
-      "descripcion": "Aprobar ambos parciales con 8 o más: 4 de los 6 ítems bien resueltos, con al menos 1 teórico."
+      "descripcion": "Aprobación directa: ambos parciales (2 ítems teóricos + 4 prácticos cada uno) con 8D o más, que se logra con 4 de los 6 ítems bien resueltos, al menos 1 teórico. Nota final sin recuperar, según la suma de los dos parciales: 16D → 8, 17D o 18D → 9, 19D o 20D → 10. Si hubo recuperación (complementaria o completa): 8."
     },
     "regularizacion": {
       "nota_minima": 6,
-      "descripcion": "Aprobar ambos parciales con 6 o más: 2 de los 4 ítems prácticos bien resueltos (no cuentan los teóricos)."
+      "descripcion": "Firma de TP (aprobación no directa, con examen final): ambos parciales con 6 o más, que se logra con 2 de los 4 ítems prácticos bien resueltos; los teóricos no cuentan."
     },
-    "notas": "Complementarios y recuperatorios según el régimen de la UDB Matemática."
+    "notas": "Fuente: Estructura evaluaciones.pdf (ciclo lectivo 2021; la metodología de calificación se mantiene). Calificación de cada parcial según ítems bien (base = 1 teórico + 2 prácticos): base → 6D, complementa práctica (de 2 prácticos, al menos 1 bien; si aprueba pasa a 8D); base + 1 → 8D; base + 2 → 9D; base + 3 → 10D; solo 3 prácticos → 6D, complementa teoría (de 2 teóricos, al menos 1 bien; si aprueba pasa a 8D); solo 4 prácticos → 7D, complementa teoría; solo 2 prácticos → 6, complementa teoría y práctica (de 2 teóricos y 2 prácticos, al menos 1 bien de cada tipo; si aprueba pasa a 8D); cualquier otro caso → 1 a 5 (insuficiente). Recuperación para aprobación directa: solo uno de los dos parciales, en una única oportunidad; con al menos 2 prácticos bien se rinde la evaluación complementaria, en cualquier otro caso (incluso ausente) el parcial completo, que requiere 8D. Si no aprueba o no se presenta al complemento, se firman los TP y pasa a final; en el recuperatorio completo sin 8D, para la firma solo cuentan los prácticos. Para la firma, cada parcial tiene dos oportunidades de recuperación; quien deba recuperar ambos rinde una evaluación integradora de 6 prácticos (3 de P1 y 3 de P2) y aprueba con 3 bien, al menos 1 de cada parcial. Los ítems teóricos salen del listado de requerimientos teóricos para el examen final de la guía de TP; si es una definición o un enunciado, se complementa con una pregunta o ejercicio de interpretación. Final (aprobación no directa): modalidad virtual, 2 horas, 10 preguntas, mínimo 6 correctas (6 puntos). Temas: P1 hasta extremos inclusive (TP0 a TP6); P2 el resto del programa (TP7 a TP11)."
   },
-  "sesiones": []
+  "sesiones": [],
+  "extra": {
+    "nivel_inicial": "2026-09-24: todos los temas de u1–u5 en nivel 1 porque el estudiante asistió a todas las clases de TP0–TP6 (conocimiento superficial, sin ejercicios resueltos solo). Las fechas de las clases no están registradas; solo Taylor tiene ultimo_repaso (sesión guiada del 23/09)."
+  }
 }
