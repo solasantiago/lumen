@@ -36,7 +36,11 @@
           "color": 2,
           "icono": "senal",
           "estado": "cursando",
-          "fuente": null
+          "fuente": {
+            "repo": "solasantiago/cdd",
+            "ruta": "lumen.json",
+            "rama": "main"
+          }
         },
         {
           "id": "sistemas-operativos",
