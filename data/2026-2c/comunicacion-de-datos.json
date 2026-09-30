@@ -3,7 +3,7 @@
   "id": "comunicacion-de-datos",
   "nombre": "Comunicación de Datos",
   "abreviatura": "CD",
-  "actualizado": "2026-09-25T00:00:00-03:00",
+  "actualizado": "2026-09-29T22:40:19-03:00",
   "programa": {
     "plan": "2023",
     "nivel": 4,
@@ -415,24 +415,81 @@
       "id": "p1",
       "nombre": "1er parcial",
       "tipo": "parcial",
-      "fecha": null,
+      "fecha": "2026-09-28",
+      "hora": "19:00",
       "unidades": [
         "u1",
         "u2",
         "u3",
-        "u4"
+        "u5",
+        "u6"
       ],
       "nota": null,
-      "estado": "pendiente"
+      "estado": "desaprobado"
     },
     {
       "id": "p2",
       "nombre": "2do parcial",
       "tipo": "parcial",
-      "fecha": null,
+      "fecha": "2026-10-26",
       "unidades": [
+        "u4",
+        "u7",
+        "u8"
+      ],
+      "nota": null,
+      "estado": "pendiente"
+    },
+    {
+      "id": "p1-r1",
+      "nombre": "1er recuperatorio del 1er parcial",
+      "tipo": "recuperatorio",
+      "fecha": "2026-11-04",
+      "unidades": [
+        "u1",
+        "u2",
+        "u3",
         "u5",
-        "u6",
+        "u6"
+      ],
+      "nota": null,
+      "estado": "pendiente"
+    },
+    {
+      "id": "p1-r2",
+      "nombre": "2do recuperatorio del 1er parcial",
+      "tipo": "recuperatorio",
+      "fecha": "2026-11-11",
+      "unidades": [
+        "u1",
+        "u2",
+        "u3",
+        "u5",
+        "u6"
+      ],
+      "nota": null,
+      "estado": "pendiente"
+    },
+    {
+      "id": "p2-r1",
+      "nombre": "1er recuperatorio del 2do parcial",
+      "tipo": "recuperatorio",
+      "fecha": "2026-11-18",
+      "unidades": [
+        "u4",
+        "u7",
+        "u8"
+      ],
+      "nota": null,
+      "estado": "pendiente"
+    },
+    {
+      "id": "p2-r2",
+      "nombre": "2do recuperatorio del 2do parcial",
+      "tipo": "recuperatorio",
+      "fecha": "2026-11-25",
+      "unidades": [
+        "u4",
         "u7",
         "u8"
       ],
@@ -441,9 +498,23 @@
     }
   ],
   "aprobacion": {
-    "promocion": null,
-    "regularizacion": null,
-    "notas": "El programa no detalla el régimen de aprobación. Completarlo con lo que informe la cátedra."
+    "promocion": {
+      "nota_minima": 8,
+      "descripcion": "8 o más en los dos parciales, o en un recuperatorio de un solo parcial."
+    },
+    "regularizacion": {
+      "nota_minima": 6,
+      "descripcion": "Aprobar los dos parciales o sus recuperatorios (6 o más; hay dos recuperatorios por parcial), mantener la asistencia a las clases virtuales y aprobar el 75 % de los TP, subidos en forma individual."
+    },
+    "notas": "Según la planificación 2026 del curso K3571 (fuentes/PLANIFICACION20262C.doc). Todas las instancias se califican de 1 a 10. Si no se promociona, final presencial."
   },
-  "sesiones": []
+  "sesiones": [],
+  "extra": {
+    "guia": "guias/README.md",
+    "evaluaciones": {
+      "p1": "Tema B, 7 ítems (4 de teoría de 1 punto y 3 problemas de 2). El estudiante estima un 2: solo resolvió el ejercicio 5 (cálculo de enlace). Nota a confirmar.",
+      "alcance": "p1: TP 1 a 5 y la teoría de errores (capítulos 1 a 6.1 de la guía; las interfaces de 3.2 son de u8). p2: TP 6 (protocolos), 7, 8 y 9 (capítulos 6.2 a 9).",
+      "fechas": "Fechas del 2do parcial y de los recuperatorios confirmadas por el estudiante el 29/09/2026."
+    }
+  }
 }

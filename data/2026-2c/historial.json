@@ -19,6 +19,18 @@
           "p1": 0,
           "p2": 0
         }
+      },
+      {
+        "fecha": "2026-09-30",
+        "porcentaje": 0,
+        "evaluaciones": {
+          "p1": 0,
+          "p2": 0,
+          "p1-r1": 0,
+          "p1-r2": 0,
+          "p2-r1": 0,
+          "p2-r2": 0
+        }
       }
     ],
     "sistemas-operativos": [
@@ -28,6 +40,18 @@
         "evaluaciones": {
           "p1": 0,
           "p2": 0
+        }
+      },
+      {
+        "fecha": "2026-09-30",
+        "porcentaje": 0,
+        "evaluaciones": {
+          "p1": 0,
+          "p2": 0,
+          "p1-r1": 0,
+          "p2-r1": 0,
+          "p1-r2": 0,
+          "p2-r2": 0
         }
       }
     ]
