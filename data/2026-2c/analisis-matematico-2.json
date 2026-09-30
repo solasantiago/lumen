@@ -3,7 +3,7 @@
   "id": "analisis-matematico-2",
   "nombre": "Análisis Matemático II",
   "abreviatura": "AM2",
-  "actualizado": "2026-09-25T04:30:00-03:00",
+  "actualizado": "2026-09-30T02:20:00-03:00",
   "programa": {
     "plan": "2023",
     "anio_programa": 2026,
@@ -585,6 +585,10 @@
   ],
   "extra": {
     "nivel_inicial": "2026-09-24: todos los temas de u1–u5 en nivel 1 porque el estudiante asistió a todas las clases de TP0–TP6 (conocimiento superficial, sin ejercicios resueltos solo). Las fechas de las clases no están registradas; solo Taylor tiene ultimo_repaso (sesión guiada del 23/09).",
-    "repaso_2026-09-25": "Niveles sin cambios a pedido del estudiante: un tema sube solo cuando responde bien en un repaso posterior lo que falló. proximo_repaso = 25/09 (tarde, antes del P1) en vez de +2 días, por el parcial."
+    "repaso_2026-09-25": "Niveles sin cambios a pedido del estudiante: un tema sube solo cuando responde bien en un repaso posterior lo que falló. proximo_repaso = 25/09 (tarde, antes del P1) en vez de +2 días, por el parcial.",
+    "guia": "guias/README.md (13 capítulos, uno por TP de la guía, armados el 30/09/2026)",
+    "p1_2026-09-25": "Rendido. El estudiante cree que le fue bien; falta la nota. Preguntar qué ítems tomaron para marcar los bloques con 📌.",
+    "estrellas": "Capítulos del P1: contra el modelo y el recuperatorio 1 del curso Z2571. Capítulos del P2: contra 10 finales publicados por la UDB Matemática (fuentes/finales, links en programa/fuentes.md).",
+    "migracion_2026-09-30": "La memoria anterior (.claude/memoria), Plan P1.md y Resueltos propios/ se migraron a guias/ y se borraron."
   }
 }
