@@ -48,7 +48,11 @@
           "color": 3,
           "icono": "chip",
           "estado": "cursando",
-          "fuente": null
+          "fuente": {
+            "repo": "solasantiago/ssoo",
+            "ruta": "lumen.json",
+            "rama": "main"
+          }
         }
       ]
     }
