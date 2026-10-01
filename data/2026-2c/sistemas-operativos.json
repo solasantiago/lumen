@@ -3,7 +3,7 @@
   "id": "sistemas-operativos",
   "nombre": "Sistemas Operativos",
   "abreviatura": "SO",
-  "actualizado": "2026-09-30T01:25:00-03:00",
+  "actualizado": "2026-09-30T22:35:00-03:00",
   "programa": {
     "plan": "2023",
     "nivel": 2,
@@ -34,7 +34,12 @@
         {
           "id": "u1-soporte-hardware-interrupciones-modos",
           "nombre": "Soporte de hardware: interrupciones y modos usuario/kernel",
-          "nivel": 0
+          "nivel": 1,
+          "evidencia": {
+            "ultimo_repaso": "2026-09-30",
+            "proximo_repaso": "2026-10-02",
+            "minutos": 5
+          }
         },
         {
           "id": "u1-arquitecturas-kernel",
@@ -54,7 +59,12 @@
         {
           "id": "u1-llamadas-sistema-syscalls",
           "nombre": "Llamadas al sistema (syscalls)",
-          "nivel": 0
+          "nivel": 1,
+          "evidencia": {
+            "ultimo_repaso": "2026-09-30",
+            "proximo_repaso": "2026-10-02",
+            "minutos": 5
+          }
         },
         {
           "id": "u1-sistemas-operativos-multiprocesador-tiempo",
@@ -72,17 +82,34 @@
         {
           "id": "u2-proceso-vs-programa",
           "nombre": "Proceso vs. programa",
-          "nivel": 0
+          "nivel": 1,
+          "evidencia": {
+            "ultimo_repaso": "2026-09-30",
+            "proximo_repaso": "2026-10-02",
+            "minutos": 5
+          }
         },
         {
           "id": "u2-bloque-control-proceso-pcb",
           "nombre": "Bloque de control del proceso (PCB)",
-          "nivel": 0
+          "nivel": 1,
+          "evidencia": {
+            "ultimo_repaso": "2026-09-30",
+            "proximo_repaso": "2026-10-02",
+            "minutos": 8
+          },
+          "notas": "Confunde qué va en el PCB (prioridad, registros) con qué va en la imagen del proceso (stack)."
         },
         {
           "id": "u2-estados-transiciones-proceso",
           "nombre": "Estados y transiciones de un proceso",
-          "nivel": 0
+          "nivel": 1,
+          "evidencia": {
+            "ultimo_repaso": "2026-09-30",
+            "proximo_repaso": "2026-10-02",
+            "minutos": 7
+          },
+          "notas": "Arranca el ciclo en listo salteando nuevo y manda bloqueado → ejecutando en vez de bloqueado → listo."
         },
         {
           "id": "u2-operaciones-control-procesos",
@@ -97,7 +124,12 @@
         {
           "id": "u2-contexto-cambio-contexto-cambio",
           "nombre": "Contexto, cambio de contexto y cambio de proceso",
-          "nivel": 0
+          "nivel": 1,
+          "evidencia": {
+            "ultimo_repaso": "2026-09-30",
+            "proximo_repaso": "2026-10-02",
+            "minutos": 5
+          }
         },
         {
           "id": "u2-hilos-implementacion-ciclo-vida",
@@ -115,7 +147,13 @@
         {
           "id": "u3-niveles-planificacion-largo-mediano",
           "nombre": "Niveles de planificación: largo, mediano y corto plazo",
-          "nivel": 0
+          "nivel": 1,
+          "evidencia": {
+            "ultimo_repaso": "2026-09-30",
+            "proximo_repaso": "2026-10-02",
+            "minutos": 5
+          },
+          "notas": "Los nombra bien, pero le cuesta detallar qué transición hace cada planificador."
         },
         {
           "id": "u3-criterios-planificacion-politica-vs",
@@ -539,7 +577,22 @@
     "regularizacion": null,
     "notas": "Según la presentación de la materia 2026: dos parciales presenciales, TP grupal (pruebas en laboratorio y coloquio individual) y final con ejercicios integradores. La nota mínima para regularizar no figura en el material: completarla cuando la informe la cátedra."
   },
-  "sesiones": [],
+  "sesiones": [
+    {
+      "fecha": "2026-09-30",
+      "minutos": 40,
+      "tipo": "teoria",
+      "temas": [
+        "u2-proceso-vs-programa",
+        "u2-bloque-control-proceso-pcb",
+        "u2-estados-transiciones-proceso",
+        "u2-contexto-cambio-contexto-cambio",
+        "u3-niveles-planificacion-largo-mediano",
+        "u1-soporte-hardware-interrupciones-modos",
+        "u1-llamadas-sistema-syscalls"
+      ]
+    }
+  ],
   "extra": {
     "guia": "guias/README.md",
     "fechas": "Fechas del calendario de clases de la cátedra (Calendario de clases.xlsx), que las marca como tentativas. En el archivo las fechas de las clases figuran con año 2025 por error de carga: los días escritos a mano (martes 1/12, 16/02) solo coinciden con 2026-2027. Confirmar con la cátedra.",
